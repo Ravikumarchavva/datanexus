@@ -5,13 +5,20 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "fastapi>=0.115.12",
+    "flask>=3.1.1",
     "ipykernel>=6.29.5",
+    "manimgl",
     "numpy>=2.2.5",
     "pandas>=2.2.3",
     "polars>=1.29.0",
+    "setuptools>=80.9.0",
 ]
 
 [dependency-groups]
 dev = [
     "ruff>=0.11.10",
 ]
+
+[tool.uv.sources]
+manimgl = { git = "https://github.com/3b1b/manim.git" }
